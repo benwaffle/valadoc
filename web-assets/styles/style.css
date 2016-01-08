@@ -1,6 +1,7 @@
-* {
-	font-family: 'Times New Roman';
-	font-size: 12pt;
+html {
+    font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 ul.external_link {
@@ -73,12 +74,6 @@ input {
 	padding-top: 10px;
 	background-color: #aaaaff;
 	width: 100%;
-}
-
-
-div {
-	font-family:'Verdana';
-	font-size: 12;
 }
 
 
