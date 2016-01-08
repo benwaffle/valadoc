@@ -27,7 +27,7 @@ namespace Valadoc {
 	public extern const string icons_dir;
 
 	/**
-	 * Makes a copy of the file src to dest. 
+	 * Makes a copy of the file src to dest.
 	 *
 	 * @param src the file to copy
 	 * @param dest the destination path
@@ -51,20 +51,26 @@ namespace Valadoc {
 	}
 
 	/**
-	 * Makes a copy of the directory src to dest. 
+	 * Makes a copy of the directory src to dest.
 	 *
 	 * @param src the directory to copy
 	 * @param dest the destination path
 	 */
 	public bool copy_directory (string src, string dest) {
-		string _src = (src.has_suffix ( "/" ))? src : src + "/";
-		string _dest = (dest.has_suffix ( "/" ))? dest : dest + "/";
-
 		try {
-			GLib.Dir dir = GLib.Dir.open (_src);
-			for (weak string name = dir.read_name (); name != null ; name = dir.read_name ()) {
-				if (!copy_file (_src+name, _dest+name)) {
-					return false;
+			GLib.Dir dir = GLib.Dir.open (src);
+			for (string? file = dir.read_name (); file != null; file = dir.read_name ()) {
+				string src_file_path = GLib.Path.build_filename (src, file);
+				string dest_file_path = GLib.Path.build_filename (dest, file);
+				if (GLib.FileUtils.test (src_file_path, GLib.FileTest.IS_DIR)) {
+					GLib.DirUtils.create_with_parents (dest_file_path, 0755); // mkdir if necessary
+					if (!copy_directory (src_file_path, dest_file_path)) { // copy directories recursively
+						return false;
+					}
+				} else {
+					if (!copy_file (src_file_path, dest_file_path)) {
+						return false;
+					}
 				}
 			}
 		}
@@ -191,4 +197,3 @@ namespace Valadoc {
 		return rpath;
 	}
 }
-
