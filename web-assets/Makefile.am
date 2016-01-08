@@ -31,7 +31,6 @@ dist_assets_DATA = \
 	images/virtualproperty.svg \
 	images/warning.svg \
 	scripts/scripts.js \
-	styles/wikistyle.css \
 	styles/style.css \
 	styles/devhelpstyle.css \
 	$(NULL)
