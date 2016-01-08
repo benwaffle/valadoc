@@ -632,7 +632,7 @@ public abstract class Valadoc.Html.BasicDoclet : Api.Visitor, Doclet {
 								  "toggle_box  (this, '" + html_id + "')",
 								  "src",
 								  Path.build_filename (get_icon_directory (),
-								  "coll_open.png")});
+								  "coll_open.svg")});
 		writer.raw_text ("&nbsp;");
 		writer.end_tag ("div");
 		writer.end_tag ("div");
@@ -1133,4 +1133,3 @@ public abstract class Valadoc.Html.BasicDoclet : Api.Visitor, Doclet {
 		writer.end_tag ("html");
 	}
 }
-
