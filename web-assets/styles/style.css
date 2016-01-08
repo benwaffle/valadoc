@@ -411,7 +411,7 @@ a.virtual_method, .description a.virtual_method, .brief_description a.virtual_me
 	list-style-image: url(../images/abstractclass.svg);
 }
 .navi_main .abstract_method, .navi_inline .abstract_method {
-	list-style-image: url(../images/ abstractmethod.svg );
+	list-style-image: url(../images/abstractmethod.svg);
 }
 .navi_main .creation_method, .navi_inline .creation_method, .main_list_m {
 	list-style-image: url(../images/constructor.svg);
