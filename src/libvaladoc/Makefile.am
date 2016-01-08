@@ -3,7 +3,7 @@ NULL =
 DEFAULT_DRIVER = $(shell $(VALAC) --api-version >/dev/null 2>&1; if [ $$? = 0 ]; then $(VALAC) --api-version; else $(VALAC) --version; fi)
 
 AM_CFLAGS = \
-	-DPACKAGE_ICONDIR=\"$(datadir)/valadoc/icons/\" \
+	-DPACKAGE_ICONDIR=\"$(datadir)/valadoc/web-assets/\" \
 	-DPACKAGE_DATADIR=\"$(libdir)/valadoc\" \
 	-DPACKAGE_VERSION=\"$(VERSION)\" \
 	-DDEFAULT_DRIVER=\"$(DEFAULT_DRIVER)\" \

@@ -1,7 +1,7 @@
 NULL =
 
 AM_CFLAGS = \
-	-DPACKAGE_ICONDIR=\"$(datadir)/valadoc/icons/\" \
+	-DPACKAGE_ICONDIR=\"$(datadir)/valadoc/web-assets/\" \
 	-I $(top_builddir)/src/libvaladoc/ \
 	$(GLIB_CFLAGS) \
 	$(LIBGEE_CFLAGS) \

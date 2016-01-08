@@ -107,7 +107,7 @@ Makefile
 src/libvaladoc/valadoc-1.0.pc
 src/libvaladoc/valadoc-1.0.deps
 src/Makefile
-icons/Makefile
+web-assets/Makefile
 doc/Makefile
 src/libvaladoc/Makefile
 src/driver/Makefile

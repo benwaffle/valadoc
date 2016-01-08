@@ -1,8 +1,8 @@
 NULL =
 
-iconsdir = $(datadir)/valadoc/icons
+assetsdir = $(datadir)/valadoc/web-assets
 
-dist_icons_DATA = \
+dist_assets_DATA = \
 	abstractclass.png \
 	abstractmethod.png \
 	abstractproperty.png \
@@ -35,4 +35,3 @@ dist_icons_DATA = \
 	warning.png \
 	wikistyle.css \
 	$(NULL)
-
