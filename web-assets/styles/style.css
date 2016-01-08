@@ -136,17 +136,11 @@ div.site_navigation {
 
 
 div.main_code_definition {
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-
-	font-family: monospace;
-	border-color: #aaaaff;
-	background-color: #eeeeff;
-	border-style: solid;
-	border-width: 1px;
-	margin: 10px;
+       background-color: #eee;
+       border-radius: 6px;
+       font-family: "Droid Sans Mono", monospace;
+       margin: 12px;
+       padding: 12px;
 }
 
 div.main_notification_block {
