@@ -139,7 +139,7 @@ public abstract class Valadoc.Html.BasicDoclet : Api.Visitor, Doclet {
 	}
 
 	protected virtual string get_icon_directory () {
-		return "..";
+		return "../images";
 	}
 
 

@@ -2,7 +2,7 @@ NULL =
 
 assetsdir = $(datadir)/valadoc/web-assets
 
-dist_assets_DATA = \
+nobase_assets_DATA = \
 	images/abstractclass.svg \
 	images/abstractmethod.svg \
 	images/abstractproperty.svg \

@@ -28,14 +28,14 @@ using Gee;
 
 
 public class Valadoc.Html.Doclet : Valadoc.Html.BasicDoclet {
-	private const string css_path_package = "style.css";
-	private const string css_path_wiki = "../style.css";
-	private const string css_path = "../style.css";
+	private const string css_path_package = "styles/style.css";
+	private const string css_path_wiki = "../styles/style.css";
+	private const string css_path = "../styles/style.css";
 
 
-	private const string js_path_package = "scripts.js";
-	private const string js_path_wiki = "../scripts.js";
-	private const string js_path = "../scripts.js";
+	private const string js_path_package = "scripts/scripts.js";
+	private const string js_path_wiki = "../scripts/scripts.js";
+	private const string js_path = "../scripts/scripts.js";
 
 	private class IndexLinkHelper : LinkHelper {
 		protected override string? from_wiki_to_package (WikiPage from, Api.Package to) {
@@ -216,4 +216,3 @@ public class Valadoc.Html.Doclet : Valadoc.Html.BasicDoclet {
 public Type register_plugin (Valadoc.ModuleLoader module_loader) {
 	return typeof ( Valadoc.Html.Doclet );
 }
-
